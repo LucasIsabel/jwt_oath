@@ -13,7 +13,6 @@
     "nodemon": "^1.18.4"
   },
   "devDependencies": {
-    "@babel/preset-es2017": "^7.0.0-beta.53",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
   }
