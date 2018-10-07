@@ -1,9 +1,14 @@
+import AuthService from '../services/AuthService'
+
 class AuthController {
-    static async sendAnswer(req, res, next) {
+
+    async sendAnswer(req, res, next) {
+        const authService = new AuthService()
         // this method was added just to test
-        const result = await Promise.resolve({ ok: 200})
+        const result = await authService.verifiyAuthentatication()
         res.status(200).send(result)
     }
+
 }
 
 export default AuthController;
