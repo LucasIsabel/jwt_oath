@@ -9,7 +9,7 @@ class AuthController {
     this.authService = new AuthService();
   }
 
-  async sendAnswer(req, res, next) {
+   sendAnswer = async (req, res, next) => {
     // this method was added just to test
     const result = await this.authService.verifiyAuthentatication();
     res.status(OK).send(result);
