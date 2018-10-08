@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import routes from './routes'
 
 const app = express(),
-    port = process.env.Port || 3000;
+    port = process.env.PORT || 3000;
 
 // Middlewares
 app.use(morgan('dev'));
