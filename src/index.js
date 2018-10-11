@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
-import routes from './routes'
+import routes from './routes/AuthRouter'
 
 const app = express(),
     port = process.env.PORT || 3000;
