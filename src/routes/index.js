@@ -5,9 +5,13 @@ const router = express.Router();
 import AuthController from '../controlers/AuthController';
 const authController = new AuthController();
 
+// RouterHelper
+import RouterHelper from '../helpers/routeHelpers';
+const routerHelper = new RouterHelper();
+
 // routes related to Authentication
-router.get('/signIn', authController.sendAnswer);
-router.post('/signOut', authController.sendAnswer);
-router.get('/secret', authController.sendAnswer);
+router.post('/auth/signIn', routerHelper.validateSign, authController.signIn);
+router.post('/auth/signOut', authController.signOut);
+router.get('/auth/secret', authController.secret);
 
 export default router;

@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node"
+    "start": "nodemon src/index.js --exec babel-node --source-maps"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "joi": "^14.0.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.4"
   },
